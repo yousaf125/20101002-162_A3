@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.header-content {
+    max-width: 70%;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section, article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#cv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills, #projects {
+    width: 25%;
+    flex: 1 100%;
+}
+
+#education {
+    width: 50%;
+    flex: 1 100%;
+}
+
+@media screen and (min-width: 600px) {
+    #education, #skills, #projects {
+        flex: 1;
+    }
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+  }
+
+  /* for desktop */
+  .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
